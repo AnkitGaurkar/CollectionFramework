@@ -1,0 +1,33 @@
+# CollectionFramework
+
+ArrayListpackage com;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ArrListExxample {
+	
+	public static void main (String []args)
+	{
+		List<String>l1=new ArrayList<String>();
+		
+		l1.add("Ankit");
+		l1.add("Sunil");
+		l1.add("Gaurkar");
+		
+		System.out.println(l1);//simple print the Elements
+		
+		
+		//Traversing of Elements
+		Iterator<String>i1=l1.iterator();
+		
+	
+		while(i1.hasNext())
+		{
+			System.out.println(i1.next());
+		}
+		
+	}
+}
+
