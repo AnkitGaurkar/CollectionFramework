@@ -1,0 +1,20 @@
+# CollectionFramework
+
+public class DupEle {
+	
+	public static void main(String []args)
+	{
+		
+		ArrayList<String>a1=new ArrayList<String>(Arrays.asList("Good","Morining","Ankit"));
+		
+		ArrayList<String>a2=new ArrayList<String>(Arrays.asList("Good","Night","Priyanka"));
+		
+		ArrayList<String>a3=new ArrayList<String>();
+		
+		for(String temp:a1)
+		{
+			a3.add(a2.contains(temp)?"Yes":"No");
+		}
+		System.out.println(a3);
+	}
+}
