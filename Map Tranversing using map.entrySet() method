@@ -1,0 +1,26 @@
+package com;
+
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+
+
+class DupEle
+{
+	public static void main(String[] args)
+	{
+		HashMap<String,Float>map=new HashMap<String, Float>();
+		map.put("Sugar", 22.2f);
+		map.put("Tea Powder", 9.89f);
+		map.put("Soup", 55.4f);
+		
+		for(Map.Entry<String, Float>entry: map.entrySet())
+		{
+			System.out.println("Kirana:"+entry.getKey()+"     "+"Price:"+entry.getValue());
+		}
+	}
+}
