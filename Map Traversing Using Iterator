@@ -1,0 +1,18 @@
+class DupEle
+{
+	public static void main(String[] args)
+	{
+		HashMap<Integer,String>hm=new HashMap<Integer, String>();
+		hm.put(123, "Ajuba");
+		hm.put(124, null);
+		hm.put(125, "Apple");
+		
+		System.out.println(hm);
+		Iterator<Integer>itr=hm.keySet().iterator();
+		while(itr.hasNext())
+		{
+			int key=(int) itr.next();
+			System.out.println("Id:"+key+ "      " +"Value:"+hm.get(key));
+		}
+	}
+}
