@@ -1,0 +1,25 @@
+package com;
+
+
+import java.util.HashMap;
+
+
+
+
+class DupEle
+{
+	public static void main(String[] args)
+	{
+		Map<String,String>map=new HashMap<String, String>();
+		map.put("Ankit","Gaurkar");
+		map.put("Soham","Parankar");
+		map.put("Raju", "Mulankar");
+		
+		for(String name:map.keySet())
+		{
+			String lastname=map.get(name);
+		
+		System.out.println("Key:"+name+",     value;"+lastname);
+		}
+	}
+}
