@@ -1,0 +1,27 @@
+package com;
+
+
+import java.util.HashMap;
+
+
+class DupEle
+{
+	public static void main(String[] args)
+	{
+		HashMap<String,String>hm=new HashMap<String, String>();
+		hm.put("MahaRashtra", "Mumbai");
+		hm.put("Gujarat", "GandhiNagar");
+		hm.put("Delhi", "Delhi");
+		
+		System.out.println(hm);
+		
+		for(String State:hm.keySet())
+		{
+			System.out.println("State:"+State);
+		}
+		for(String Capital:hm.values())
+		{
+			System.out.println("Capital:"+Capital);
+		}
+	}
+}
