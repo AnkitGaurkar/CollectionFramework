@@ -1,0 +1,29 @@
+package com;
+
+
+import java.util.HashMap;
+import java.util.Map;
+
+
+class DupEle
+{
+	public static void main(String[] args)
+	{
+	Map<Integer,String>map=new HashMap<Integer,String>();
+	
+	map.put(123, "Ankit");
+	map.put(144, "Sunil");
+	map.put(444, "Sangita");
+	map.put(102, null);
+	map.put(123, "Ankit");
+	map.put(null, "Priyanka");
+	map.put(144, null);
+
+	System.out.println(map);
+	
+	for(Map.Entry<Integer, String>m1:map.entrySet())
+	{
+		System.out.println(m1.getKey()+" "+m1.getValue());
+	}
+	}
+}
